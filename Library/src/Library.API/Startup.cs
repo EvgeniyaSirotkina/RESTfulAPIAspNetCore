@@ -33,6 +33,8 @@ namespace Library.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Library.API", Version = "v1" });
             });
 
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddScoped<ILibraryRepository, LibraryRepository>();
 
             services.AddDbContext<LibraryContext>(options =>
