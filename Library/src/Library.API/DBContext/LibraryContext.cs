@@ -65,6 +65,15 @@ namespace Library.API.DBContext
                     LastName = "Lapidus",
                     Genre = "Thriller",
                     DateOfBirth = new DateTimeOffset(new DateTime(1974, 5, 24))
+                },
+                new Author()
+                {
+                    Id = new Guid("8722ba31-bb3d-4e7a-ad34-7d4882ab554f"),
+                    FirstName = "Howard Phillips",
+                    LastName = "Lovecraft",
+                    Genre = "Horror",
+                    DateOfBirth = new DateTimeOffset(new DateTime(1890, 8, 20)),
+                    DateOfDeath = new DateTimeOffset(new DateTime(1937, 3, 15))
                 });
 
             modelBuilder.Entity<Book>().HasData(
@@ -144,6 +153,20 @@ namespace Library.API.DBContext
                     AuthorId = new Guid("a1da1d8e-1988-4634-b538-a01709477b77"),
                     Title = "Easy Money",
                     Description = "Easy Money or Snabba cash is a novel from 2006 by Jens Lapidus. It has been a success in term of sales, and the paperback was the fourth best seller of Swedish novels in 2007."
+                },
+                new Book()
+                {
+                    Id = new Guid("96e9c0e0-095b-4014-b4f5-15826e3210ba"),
+                    AuthorId = new Guid("8722ba31-bb3d-4e7a-ad34-7d4882ab554f"),
+                    Title = "The Cats of Ulthar",
+                    Description = "An unnamed narrator, while gazing upon his pet cat, begins to reminisce about a law in the town of Ulthar which forbids the killing of cats and relates the story of how this law came to be. The tale begins with the introduction of an old cotter and his wife who delight in trapping and violently killing any cats who venture onto their property. The people of the town are too afraid of the couple to speak against these acts, so they instead focus their efforts on keeping their felines from approaching the cotter's house. One night a caravan of travelers from a distant land arrives and passes through the village. They bring with them an orphan named Menes who, having lost his family to a plague, has only a small, black kitten to keep him company. After being unable to find his kitten on the third day of his stay, Menes hears the stories of the old cotter and his wife, and decides to take action."
+                },
+                new Book()
+                {
+                    Id = new Guid("822a4af8-c3b4-416b-8745-c0a872654ec4"),
+                    AuthorId = new Guid("8722ba31-bb3d-4e7a-ad34-7d4882ab554f"),
+                    Title = "The Alchemist",
+                    Description = "The story is recounted by the protagonist, Count Antoine de C, in the first person. Hundreds of years ago, Antoine's noble ancestor was responsible for the death of a dark wizard, Michel Mauvais. The wizard's son, Charles le Sorcier, swore revenge on not only him but all his descendants, cursing them to die on reaching the age of 32."
                 });
         }
     }
