@@ -13,7 +13,7 @@ namespace Library.API.Entities
         [MaxLength(100)]
         public string Title { get; set; }
 
-        [MaxLength(500)]
+        [MaxLength(1000)]
         public string Description { get; set; }
 
         [ForeignKey("AuthorId")]
