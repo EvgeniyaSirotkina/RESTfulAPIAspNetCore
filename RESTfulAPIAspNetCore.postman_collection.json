@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "02d5ae7c-f066-466d-bdd2-1506bd86d0af",
+		"name": "RESTfulAPIAspNetCore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "GET Authors",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://localhost:5001/api/authors",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Author",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://localhost:5001/api/authors/578359b7-1967-41d6-8b87-64ab7605587e",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors",
+								"578359b7-1967-41d6-8b87-64ab7605587e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Author (unexisting)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/authors/e2fbfd09-a081-4a6b-9ab2-4c36462468c9",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors",
+								"e2fbfd09-a081-4a6b-9ab2-4c36462468c9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Author (Accept: application/json)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:5001/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors",
+								"25320c5e-f58a-4b1f-b63a-8ee07a840bdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Author (Accept: application/xml)",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:5001/api/authors/25320c5e-f58a-4b1f-b63a-8ee07a840bdf",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors",
+								"25320c5e-f58a-4b1f-b63a-8ee07a840bdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Author (null authorId)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:5001/api/authors/null",
+							"protocol": "https",
+							"host": [
+								"localhost:5001"
+							],
+							"path": [
+								"api",
+								"authors",
+								"null"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
